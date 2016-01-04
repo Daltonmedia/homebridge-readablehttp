@@ -10,7 +10,7 @@ Supports https devices on the HomeBridge Platform and provides a readable callba
 
 # Configuration
 
-The configuration for this plugin is the same as [homebridge-http](https://github.com/rudders/homebridge-http) but includes an additional method to read the power state of the device. Specify the `readable_url` in your config.js that returns the status of the device as an integer (0 = off, 1 = on).
+The configuration for this plugin is the same as [homebridge-http](https://github.com/rudders/homebridge-http) but includes an additional method to read the power state of the device. Specify the `read_url` in your config.js that returns the status of the device as an integer (0 = off, 1 = on).
 
 Configuration sample:
 
@@ -23,7 +23,7 @@ Configuration sample:
 	"on_body": "{\"state\":\"On\"}",
 	"off_url": "https://192.168.1.22:3030/devices/23222/off",
 	"off_body": "{\"state\":\"Off\"}",
-	"readable_url": "https://192.168.1.22:3030/devices/23222/status",
+	"read_url": "https://192.168.1.22:3030/devices/23222/status",
 	"brightness_url": "https://192.168.1.22:3030/devices/23222/brightness/%b",
 	"username": "",
 	"password": "",
